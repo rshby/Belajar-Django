@@ -8,7 +8,14 @@ from django.http import HttpResponse
 def index(request): #=> index untuk si blog
     context = {
         "judul" : "Halaman Blog Website",
-        "coder" : "Reo Sahobby"
+        "coder" : "Reo Sahobby",
+        "menu" : [
+            ["/","Home"],
+            ["/blog","Blog"],
+            ["/about", "About"],
+            ["/blog/recent","Recent"],
+            ["/blog/profile","Profile"]
+        ]
     }
     return render(request, 'blog/index.html', context)
 
@@ -16,6 +23,10 @@ def recent(request):
     context = {
         "judul" : "Halaman Recent Apps",
         "coder" : "Reo S",
+        "menu" : [
+            ["/blog","Blog"],
+            ["/blog/profile", "Profile"]
+        ]
     }
     return render(request, 'blog/index.html', context)
 
@@ -23,6 +34,10 @@ def profile(request):
     context = {
         "judul" : "Halaman Profil Penulis",
         "coder" : "Reo Sahobby",
-        "alamat" : "Klaten"
+        "alamat" : "Klaten",
+        "menu" : [
+            ["/blog","Blog"],
+            ["/blog/recent", "Recent"]
+        ]
     }
     return render(request, 'blog/index.html', context)
