@@ -16,8 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from . import views
+from blog import views as viewsBlog
+from about import views as viewsAbout
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^ ', views.index),
+    url(r'^$', views.index),
+    url(r'^blog/$', viewsBlog.index), #=> mengakses link blog
+    url(r'^about/$', viewsAbout.index), #=> mengakses link about
 ]
