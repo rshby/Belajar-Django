@@ -1,3 +1,4 @@
+{% load static%}
 <!doctype html>
 <html lang="en">
   <head>
@@ -29,8 +30,11 @@
 
 
       <div class="container">
-          <h1>Hello, ini adalah {{judul}}</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita dolore, eligendi repudiandae voluptas ipsum illum tenetur repellendus rem totam temporibus consequatur praesentium quaerat. Cumque assumenda velit repellendus fugiat inventore perferendis?</p>
+        <div class="jumbotron jumbotron-fluid">
+          <img style="width: 100%;" src="{% static gambar %}" alt="">
+        </div>
+        <h1>Hello, ini adalah {{judul}}</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita dolore, eligendi repudiandae voluptas ipsum illum tenetur repellendus rem totam temporibus consequatur praesentium quaerat. Cumque assumenda velit repellendus fugiat inventore perferendis?</p>
       </div>
 
     <!-- Optional JavaScript -->

@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -27,6 +28,9 @@
         </div>
       </nav>
     <div class="container">
+      <div class="jumbotron jumbotron-fluid">
+        <img style="width: 100%;" src="{% static gambar %}" alt="">
+      </div>
         <h1>Ini adalah {{judul}}</h1>
         <p>Halaman ini dibuat {{ coder }}</p>
         <br>
