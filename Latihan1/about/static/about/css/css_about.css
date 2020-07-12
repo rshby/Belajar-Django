@@ -1,0 +1,24 @@
+h1 {
+    color: #555;
+    font-family: Arial;
+}
+
+.isi-konten {
+    border-radius: 30px;
+}
+
+.jumbotron {
+    background-image: url("/static/about/img/banner_about.png");
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+    padding: 0;
+}
+
+.navbar {
+    font-family: Arial;
+}
+
+nav img{
+    height: 26px;
+}

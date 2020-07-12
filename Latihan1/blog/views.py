@@ -29,7 +29,8 @@ def recent(request):
             ["/blog","Blog"],
             ["/blog/profile", "Profile"]
         ],
-        "gambar" : "blog/img/banner_blog.png"
+        "gambar" : "blog/img/banner_blog.png",
+        "css_app" : "blog/css/styles.css",
     }
     return render(request, 'blog/index.html', context)
 
@@ -42,6 +43,7 @@ def profile(request):
             ["/blog","Blog"],
             ["/blog/recent", "Recent"]
         ],
-        "gambar" : "blog/img/banner_blog.png"
+        "gambar" : "blog/img/banner_blog.png",
+        "css_app" : "blog/css/styles.css",
     }
     return render(request, 'blog/index.html', context)
