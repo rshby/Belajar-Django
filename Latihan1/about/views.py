@@ -10,5 +10,6 @@ def index(request):
             ["/about", "About"]
         ],
         "gambar" : "about/img/banner_about.png",
+        "css_app" : "about/css/styles.css"
     }
     return render(request, 'about/index.html', context)

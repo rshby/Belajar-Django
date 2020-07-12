@@ -16,7 +16,8 @@ def index(request): #=> index untuk si blog
             ["/blog/recent","Recent"],
             ["/blog/profile","Profile"]
         ],
-        "gambar" : "blog/img/banner_blog.png"
+        "gambar" : "blog/img/banner_blog.png",
+        "css_app" : "blog/css/styles.css",
     }
     return render(request, 'blog/index.html', context)
 
