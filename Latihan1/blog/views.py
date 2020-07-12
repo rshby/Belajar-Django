@@ -9,7 +9,7 @@ def index(request): #=> index untuk si blog
     context = {
         "judul" : "Halaman Blog Website",
         "coder" : "Reo Sahobby",
-        "menu" : [
+        "nav" : [
             ["/","Home"],
             ["/blog","Blog"],
             ["/about", "About"],
@@ -25,7 +25,7 @@ def recent(request):
     context = {
         "judul" : "Halaman Recent Apps",
         "coder" : "Reo S",
-        "menu" : [
+        "nav" : [
             ["/blog","Blog"],
             ["/blog/profile", "Profile"]
         ],
@@ -38,7 +38,7 @@ def profile(request):
         "judul" : "Halaman Profil Penulis",
         "coder" : "Reo Sahobby",
         "alamat" : "Klaten",
-        "menu" : [
+        "nav" : [
             ["/blog","Blog"],
             ["/blog/recent", "Recent"]
         ],

@@ -1,0 +1,46 @@
+{% load static%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    {% include 'snippets/bootstraps.html' %}
+    
+    {% block app_css %}
+       
+    {% endblock app_css %}
+        
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    {% include 'snippets/navbar.html' %}
+      <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container text-white">
+            {% block header %}
+                
+            {% endblock header %}
+          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="container shadow bg-light text-dark isi-konten" style="margin-top: -120px;" id="isiKonten">
+          {% block konten %}
+              
+          {% endblock konten %}           
+        </div>
+        <div class="container shadow bg-dark text-white isi-konten" style="margin-top: 10px;" id="isiKonten">
+            {% block konten2 %}
+     
+            {% endblock konten2 %}           
+          </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    {% include 'snippets/scripts.html' %}
+  </body>
+</html>

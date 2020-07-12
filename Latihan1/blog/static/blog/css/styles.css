@@ -1,3 +1,24 @@
 h1 {
-    color: cornflowerblue;
+    color: #555;
+    font-family: Arial;
+}
+
+.isi-konten {
+    border-radius: 30px;
+}
+
+.jumbotron {
+    background-image: url("/static/blog/img/banner_blog.png");
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+    padding: 0;
+}
+
+.navbar {
+    font-family: Arial;
+}
+
+nav img {
+    height: 26px;
 }
